@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teyvat Live Map – Free Interactive Genshin Impact Map with Live Minimap Overlay</title>
+<meta name="description" content="Teyvat Live Map is a free interactive map for Genshin Impact on Windows. It finds where you are from your minimap, shows oculi, chests and materials around you in an in-game overlay, and marks oculi found automatically when you pick them up.">
+<link rel="canonical" href="https://gaminggouda.github.io/teyvat-live-map/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Teyvat Live Map">
+<meta property="og:title" content="Teyvat Live Map – Interactive Genshin Impact map that follows you">
+<meta property="og:description" content="Free Windows app: live position on the map, an in-game minimap with every oculus and chest around you, and oculi marked found automatically.">
+<meta property="og:url" content="https://gaminggouda.github.io/teyvat-live-map/">
+<meta property="og:image" content="https://gaminggouda.github.io/teyvat-live-map/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#151826">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Teyvat Live Map",
+  "alternateName": ["Teyvat Live Map for Genshin Impact", "Interactive Genshin Impact map overlay"],
+  "description": "Free interactive map and live minimap overlay for Genshin Impact on Windows. Tracks your position from the in-game minimap, shows oculi, chests, local specialties, enemies and character materials around you, and marks oculi found automatically when you pick them up.",
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Game companion / interactive map",
+  "operatingSystem": "Windows 10, Windows 11",
+  "softwareVersion": "0.4.0",
+  "url": "https://gaminggouda.github.io/teyvat-live-map/",
+  "downloadUrl": "https://github.com/GamingGouda/teyvat-live-map/releases/latest/download/Teyvat-Live-Map-Setup.exe",
+  "image": "https://gaminggouda.github.io/teyvat-live-map/img/og.jpg",
+  "screenshot": ["https://gaminggouda.github.io/teyvat-live-map/img/map-targets.jpg", "https://gaminggouda.github.io/teyvat-live-map/img/underground.jpg", "https://gaminggouda.github.io/teyvat-live-map/img/minimap.png"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isAccessibleForFree": true,
+  "featureList": [
+    "Live position on the map, read from the game's minimap on screen",
+    "In-game minimap overlay with every unfound oculus, chest and material around you",
+    "Oculi marked found automatically when you pick them up",
+    "Interactive map of Teyvat with underground layers and floor switcher",
+    "Character level-up and talent material locations",
+    "Hotkeys that work in game, including mouse side buttons",
+    "Import found markers from AppSample's Genshin map"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is Teyvat Live Map free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is completely free. It is made by one person and supported by optional tips on Ko-fi."}},
+    {"@type": "Question", "name": "Does it change or read Genshin Impact's game files or memory?", "acceptedAnswer": {"@type": "Answer", "text": "No. It only looks at the picture on your screen, like screen-recording software does: the minimap to find where you are, and the item list on the left to see when you pick up an oculus. It never reads or changes the game's files or memory and never sends input to the game."}},
+    {"@type": "Question", "name": "Which systems does it run on?", "acceptedAnswer": {"@type": "Answer", "text": "Windows 10 and Windows 11, with the PC version of Genshin Impact. It works on any monitor, including when the game is on a second screen."}},
+    {"@type": "Question", "name": "Why does Windows say 'Windows protected your PC'?", "acceptedAnswer": {"@type": "Answer", "text": "The installer is not signed with a paid company certificate, so Windows SmartScreen warns about it. Click 'More info', then 'Run anyway'."}},
+    {"@type": "Question", "name": "Why does it ask for administrator permission?", "acceptedAnswer": {"@type": "Answer", "text": "Genshin Impact runs as administrator, and Windows hides key presses aimed at administrator windows from normal apps. Allowing the prompt lets your hotkeys work while you play. Everything else works without it."}},
+    {"@type": "Question", "name": "Can I bring my progress from another Genshin map?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can import the markers you already found on AppSample's Genshin Impact map with a copy-and-paste step inside the app."}}
+  ]
+}
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="img/icon-192.png" alt="" width="28" height="28"> Teyvat Live Map</a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn small" href="https://github.com/GamingGouda/teyvat-live-map/releases/latest/download/Teyvat-Live-Map-Setup.exe">Download</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Free interactive map for Genshin Impact · Windows</p>
+      <h1>The Genshin map that <span>follows you</span> while you play</h1>
+      <p class="lead">Teyvat Live Map finds where you are from your minimap and shows every oculus, chest and material around you in a small overlay over the game. Pick up an oculus and it's marked found by itself.</p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/GamingGouda/teyvat-live-map/releases/latest/download/Teyvat-Live-Map-Setup.exe">Download free for Windows</a>
+        <a class="btn ghost" href="#features">See what it does</a>
+      </div>
+      <p class="fine">Version 0.4.0 · Windows 10 &amp; 11 · No account needed</p>
+    </div>
+    <div class="hero-media">
+      <img src="img/map-targets.jpg" alt="Teyvat Live Map: interactive Genshin Impact map with oculus targets" width="1400" height="872">
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Everything you need to 100% Teyvat</h2>
+    <div class="grid">
+      <article>
+        <h3>Knows where you are</h3>
+        <p>Your position updates live on the map from the game's own minimap, even right after a teleport. No clicking "I'm here", no alt-tabbing to find yourself.</p>
+      </article>
+      <article>
+        <h3>In-game minimap overlay</h3>
+        <p>A see-through minimap sits over the game with every unfound pin around you, plus arrows and distances to anything off-screen. Hold Alt to move or resize it.</p>
+      </article>
+      <article>
+        <h3>Oculi marked automatically</h3>
+        <p>When the game shows "Obtained: Anemoculus", the app marks that exact oculus found on your map. Works for every oculus type, from Anemoculi to Lunoculi.</p>
+      </article>
+      <article>
+        <h3>Every pin category</h3>
+        <p>Oculi, chests, puzzles, local specialties, enemies, bosses, ores, fishing spots, waypoints and more, straight from the official HoYoLAB map data.</p>
+      </article>
+      <article>
+        <h3>Character materials</h3>
+        <p>Pick a character and see exactly where their level-up and talent materials drop: the specialties, mobs, bosses and domains, all on the map.</p>
+      </article>
+      <article>
+        <h3>Underground made clear</h3>
+        <p>Caves and underground areas show one floor at a time with a floor switcher, the way they work in the game, instead of a pile of layers on top of the world.</p>
+      </article>
+      <article>
+        <h3>Hotkeys that work in game</h3>
+        <p>Show the map, mark the nearest item, undo or open a guide without leaving Genshin. Bind any key or your mouse's side buttons.</p>
+      </article>
+      <article>
+        <h3>Bring your progress</h3>
+        <p>Already tracking on AppSample's Genshin map? Import the markers you've found in a minute, then keep going here.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="shots">
+    <figure><img src="img/map-targets.jpg" alt="Teyvat Live Map showing oculus pins with targets on the interactive Genshin Impact map" loading="lazy" width="1400" height="872"><figcaption>Pick what you're hunting and set targets</figcaption></figure>
+    <figure><img src="img/underground.jpg" alt="Underground areas with a floor switcher on the interactive map" loading="lazy" width="1400" height="872"><figcaption>Underground floors, one at a time</figcaption></figure>
+    <figure class="small"><img src="img/minimap.png" alt="In-game minimap overlay showing nearby oculi" loading="lazy" width="300" height="344"><figcaption>The in-game minimap</figcaption></figure>
+  </section>
+
+  <section id="how" class="how">
+    <h2>How it works</h2>
+    <ol>
+      <li><b>Install and open it.</b> The map opens on your desktop. Pick what you want to find: oculi, chests, a character's materials.</li>
+      <li><b>Start Genshin.</b> Press the crosshair button once. The app reads your minimap from the screen and puts you on the map.</li>
+      <li><b>Play.</b> The minimap overlay shows what's around you. Oculi you pick up get marked found; for anything else press your "collect" hotkey.</li>
+    </ol>
+    <p class="note">Teyvat Live Map only looks at the picture on your screen. It never reads or changes the game's files or memory and never presses keys for you.</p>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Questions</h2>
+    <details><summary>Is it free?</summary><p>Yes, completely. It's made by one person and kept going by optional <a href="https://ko-fi.com/goudahelp">tips on Ko-fi</a>.</p></details>
+    <details><summary>Does it touch the game?</summary><p>No. It only looks at the picture on your screen, the same way recording software does: the minimap to find where you are, and the item list on the left to see when you pick up an oculus. It never reads or changes the game's files or memory.</p></details>
+    <details><summary>Windows says "Windows protected your PC". Is it safe?</summary><p>The installer isn't signed with a paid company certificate, so Windows SmartScreen warns about it. Click <b>More info</b>, then <b>Run anyway</b>.</p></details>
+    <details><summary>Why does it ask for administrator permission?</summary><p>Genshin runs as administrator, and Windows hides key presses aimed at administrator windows from normal apps. Allowing the prompt lets your hotkeys work in game. Everything else works without it.</p></details>
+    <details><summary>Does it work on two monitors, laptops, or other resolutions?</summary><p>It watches whichever monitor Genshin is on, and runs on Windows 10 and 11. It's tuned on 1440p and 1080p screens; if tracking struggles on your setup, tell us which resolution you use.</p></details>
+    <details><summary>Does automatic oculus marking work in every game language?</summary><p>It's built for the game in English, and also accepts small differences in spelling. If your game is in another language you can still mark anything with the collect hotkey.</p></details>
+    <details><summary>Is it made by HoYoverse?</summary><p>No. Teyvat Live Map is a fan-made tool. Map data and icons come from HoYoLAB's public map.</p></details>
+  </section>
+
+  <section class="final">
+    <h2>Stop alt-tabbing to find the next oculus</h2>
+    <a class="btn" href="https://github.com/GamingGouda/teyvat-live-map/releases/latest/download/Teyvat-Live-Map-Setup.exe">Download Teyvat Live Map</a>
+    <p class="fine">Free · Windows 10 &amp; 11 · Made by one fan</p>
+  </section>
+</main>
+
+<footer>
+  <p><a href="https://ko-fi.com/goudahelp">Support on Ko-fi ♥</a> · <a href="privacy.html">Privacy</a> · <a href="llms.txt">For AI assistants</a></p>
+  <p class="fine">Teyvat Live Map is a fan-made tool and is not affiliated with or endorsed by HoYoverse. Genshin Impact is a trademark of HoYoverse. Map data and icons © HoYoLAB.</p>
+</footer>
+</body>
+</html>
