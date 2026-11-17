@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy – Teyvat Live Map</title>
+<meta name="description" content="What Teyvat Live Map, the free interactive Genshin Impact map overlay, does with your data: it reads your screen on your own PC only and uploads nothing.">
+<link rel="canonical" href="https://gaminggouda.github.io/teyvat-live-map/privacy.html">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="stylesheet" href="style.css">
+<style>.doc { max-width: 760px; margin: 0 auto; padding: 48px 16px; } .doc p, .doc li { color: var(--muted); } .doc h2 { text-align: left; font-size: 22px; margin-top: 1.6em; }</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="img/icon-192.png" alt="" width="28" height="28"> Teyvat Live Map</a>
+  <nav><a class="btn small" href="https://github.com/GamingGouda/teyvat-live-map/releases/latest/download/Teyvat-Live-Map-Setup.exe">Download</a></nav>
+</header>
+<main class="doc">
+  <h1>Privacy</h1>
+  <p>Short version: Teyvat Live Map works on your own PC. It doesn't have accounts, doesn't track you, and doesn't upload what it sees.</p>
+
+  <h2>What the app looks at</h2>
+  <ul>
+    <li><b>Your screen</b>, to find your position from Genshin Impact's minimap and to read the "Obtained" item list when you pick up an oculus. Pictures are processed in memory on your PC and thrown away right after. They are never saved or sent anywhere.</li>
+    <li><b>Which window is in front and the keys you bound as hotkeys.</b> Only the keys you chose are checked, only while Genshin or the app is in front. Nothing you type is recorded.</li>
+  </ul>
+
+  <h2>What it saves on your PC</h2>
+  <ul>
+    <li>Your found markers and settings, in <code>%APPDATA%\teyvat-overlay</code>.</li>
+    <li>A small log file (<code>app.log</code>) in the same folder to help fix bugs. It records things like "tracking 3 updates/s" and which oculus was marked, never what's on your screen. It stays on your PC unless you choose to send it.</li>
+  </ul>
+
+  <h2>What it downloads</h2>
+  <ul>
+    <li>Map pictures, pins and icons from HoYoLAB's public map, and item information from HoYoLAB's wiki.</li>
+    <li>Community guides from AppSample, only when you open one.</li>
+    <li>The small list of messages shown in the app's side box. Clicking one opens your web browser.</li>
+  </ul>
+  <p>The app is built on Overwolf's version of Electron, which can contact Overwolf's servers as part of its platform; see <a href="https://www.overwolf.com/legal/privacy/">Overwolf's privacy policy</a>.</p>
+  <p>These sites receive normal web requests (like any browser visiting them) and follow their own privacy policies.</p>
+
+  <h2>Importing progress</h2>
+  <p>If you import from AppSample, you paste a list of found-marker IDs into the app yourself. The app never asks for or sees your AppSample or HoYoverse login.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: message us through <a href="https://ko-fi.com/goudahelp">Ko-fi</a>.</p>
+  <p class="fine">Last updated 2026-11-17.</p>
+</main>
+<footer><p class="fine">Teyvat Live Map is a fan-made tool and is not affiliated with or endorsed by HoYoverse.</p></footer>
+</body>
+</html>
